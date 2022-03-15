@@ -1,0 +1,24 @@
+header{
+    
+    padding: 50px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    margin: auto;
+    font-size: larger;
+}
+
+form{
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 20px;
+}
+table{
+    text-align: center;
+    border: solid black;
+    border-collapse: collapse;
+    margin: auto;
+    padding: auto;
+}
+
