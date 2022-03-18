@@ -11,35 +11,43 @@
 
     <header>Forms with Assingment 1 for Web Design</header>
     <br><br><br>
-    <form>
-        <label for="">First Name:</label>  <input type="text " name="Firstname" id="firstname"><br><br>
+    <form onsubmit="yourJSfunction();">
+        <label for="firstname">First Name:</label>  <input type="text " name="Firstname" id="firstname"><br><br>
         <label for="">Last Name:</label>  <input type="text" name="Lastname" id="lastname"><br><br>
         <label for="">Email:</label> &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="email" id="mail"><br><br>
         <label for=""> Number:</label> &nbsp;&nbsp;&nbsp; <input type="number" name="Number" id="number"><br><br>
         <label for="">Job: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <input type=" text" name="job" id="job"><br><br>
-        <button type="submit" onclick="submit1()">Submit</button> &nbsp;&nbsp; <button>Clear</button>
+        <button type="button" onclick="submit1()">Add Row</button>
     </form><br><br><br>
-    <table>
-        <thead>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Number</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td id="firstname1"></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <table id="tablebody">
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Number</th>
+                <th>Job</th>
+            </thead>
+        </table>
+
+    </div>
     <script>
         function submit1(){
         
 
             let fname = document.getElementById('firstname').value;
-            console.log(fname)
-            
+            let lname = document.getElementById('lastname').value;
+            let email = document.getElementById('mail').value;
+            let number = document.getElementById('number').value;
+            let job = document.getElementById('job').value;
 
+            document.getElementById('tablebody').innerHTML += "<tr>"
+                +"<td>" + fname + "</td>"
+                +"<td>" + lname + "</td>"
+                +"<td>" + email + "</td>"
+                +"<td>" + number + "</td>"
+                +"<td>" + job + "</td>"
+                +"</tr>"
         }
     </script>
 </body>
