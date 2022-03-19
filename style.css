@@ -2,7 +2,7 @@ header{
     
     padding: 50px;
     text-align: center;
-    background-color:  #729C44;
+    background-color: green;
     color: white;
     margin: auto;
     font-size: larger;
@@ -10,11 +10,9 @@ header{
 
 form{
     text-align: center;
-    background-color:  #729C44;
+    background-color: green;
     color: white;
     padding: 20px;
-    width: 400px;
-    margin: auto;
 }
 table{
     text-align: center;
@@ -22,14 +20,5 @@ table{
     border-collapse: collapse;
     margin: auto;
     padding: auto;
-}
-th,
-td{
-    border: 2px solid #729C44;
-    border-collapse: collapse;
-    padding: 8px;
-    font-family: 'Courier New', Courier, monospace;
-
-
 }
 
