@@ -13,6 +13,8 @@ form{
     background-color: green;
     color: white;
     padding: 20px;
+    width: 400px;
+    margin: auto;
 }
 table{
     text-align: center;
@@ -20,5 +22,15 @@ table{
     border-collapse: collapse;
     margin: auto;
     padding: auto;
+}
+th,
+td{
+    padding: 8px;
+    border: 2px solid green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+
+
 }
 
